@@ -33,6 +33,7 @@ FROM flights]]></db:parameterized-query>
 payload]]></dw:set-payload>
         </dw:transform-message>
         <set-payload value="#[message.payloadAs(java.lang.String)]" mimeType="application/json" doc:name="Set Payload"/>
+        <logger message="#[message.payload]" level="INFO" doc:name="Logger"/>
         <jms:outbound-endpoint queue="flights" connector-ref="Active_MQ" doc:name="JMS"/>
     </flow>
     <flow name="logFlights">
