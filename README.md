@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # maven-project
 
 This is my Maven project from MuleSoft's advanced development class
@@ -11,3 +12,6 @@ This is my Maven project from MuleSoft's advanced development class
 1. (Optional) Set your MULE_HOME env variable: `export MULE_HOME={locationOfMuleInstall}`
 
 1. Package and deploy: `mvn install`
+=======
+# maven-project
+>>>>>>> 6c5e49442f00b1077c54bc71c9e23d4557faa9a3
